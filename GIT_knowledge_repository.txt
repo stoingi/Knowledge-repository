@@ -59,9 +59,3 @@ https://stoingi.github.io/calorie-tracker/
 zurück zum master
  git checkout master
 
-
-
-
-
-
-git push -u origin master

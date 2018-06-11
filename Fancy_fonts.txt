@@ -1,4 +1,4 @@
-
+https://fonts.google.com
 
 
 
@@ -7,7 +7,32 @@ font-family: 'Shadows Into Light', cursive;
 
 
 
-<link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded" rel="stylesheet"> 
+font-family: 'BioRhyme Expanded', serif;
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+font-family: 'Lobster Two', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Shadows+Into+Light" rel="stylesheet"> 
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet"> 
+font-family: 'Eater', cursive;
+
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+font-family: 'Indie Flower', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+font-family: 'Eater', cursive;
 
 
 
@@ -16,4 +41,5 @@ font-family: "Eater|Indie+Flower", cursive;
 
 
 
-<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+font-family: 'Oswald', sans-serif;

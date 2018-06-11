@@ -32,6 +32,8 @@ git push --set-upstream origin test-branch
 create a gh-pages branch to have the site available online:
 
 git checkout -b gh-pages
+git push --set-upstream origin gh-pages
+
 
 https://stoingi.github.io/calorie-tracker/
 

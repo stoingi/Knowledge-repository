@@ -1,0 +1,67 @@
+
+
+
+
+
+
+oswvio@PZHW-OSWVIO MINGW64 /d/Master21/Master21_Projects
+$ mkdir calorie-tracker
+
+
+oswvio@PZHW-OSWVIO MINGW64 /d/Master21/Master21_Projects
+$ cd calorie-tracker
+
+oswvio@PZHW-OSWVIO MINGW64 /d/Master21/Master21_Projects/calorie-tracker
+$ touch index.html
+
+oswvio@PZHW-OSWVIO MINGW64 /d/Master21/Master21_Projects/calorie-tracker
+$ touch style.css
+
+oswvio@PZHW-OSWVIO MINGW64 /d/Master21/Master21_Projects/calorie-tracker
+$ git init
+Initialized empty Git repository in D:/Master21/Master21_Projects/calorie-tracker/.git/
+
+oswvio@PZHW-OSWVIO MINGW64 /d/Master21/Master21_Projects/calorie-tracker (master)
+$
+
+
+
+ atom .			(öffnet Projekt direkt im Atom)
+
+
+
+git init 		(initialisiert die GIT Instanz)
+git status
+git add .
+git commit -m "description"
+git remote add origin https://github.com/stoingi/calorie-tracker.git
+git push -u origin master
+
+
+
+push an existing repository from the command line
+
+git remote add origin https://github.com/stoingi/knowledge-repository.git
+
+publish newly created branch to github:
+git push --set-upstream origin test-branch
+
+
+
+create a gh-pages branch to have the site available online:
+
+git checkout -b gh-pages
+
+https://stoingi.github.io/calorie-tracker/
+
+
+
+zurück zum master
+ git checkout master
+
+
+
+
+
+
+git push -u origin master

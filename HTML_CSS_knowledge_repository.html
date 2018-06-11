@@ -7,8 +7,8 @@ safsdfaasdf
 
 
 atom; ctrl. + , (preferences) firefox neues privates fenster = ctrl. shift P packages: atom-beautify (activate beautify on save) emmet homebrew -> renv renv -> ruby ruby -> rails MAC: Install SW with homebrew (brew install git) Ruby installieren: http://guides.railsgirls.com/install
-rbenv -> Ruby environment (set default ruby) H1 Header wird von den Suchmaschinen mehr Bedeutung zugewiesen Alternativer Text für bilder werden bei suchmaschinen auch berücksichtigt. deshalb nicht logo.jpg sonder firmenname.jpg # Mit Route heisst bleib
-auf der gleichen seite The <a> tag defines a hyperlink, which is used to link from one page to another.
+rbenv -> Ruby environment (set default ruby) ************************************************************************************* H1 Header wird von den Suchmaschinen mehr Bedeutung zugewiesen Alternativer Text für bilder werden bei suchmaschinen auch
+berücksichtigt. deshalb nicht logo.jpg sonder firmenname.jpg # Mit Route heisst bleib auf der gleichen seite The <a> tag defines a hyperlink, which is used to link from one page to another.
 
 The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
 
@@ -25,11 +25,11 @@ The <div> tag defines a division or a section in an HTML document.
 
 Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
-STANDARD @IMPORT
+<!-- To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+STANDARD @IMPORT -->
 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
-and in CSS specify font:
+<!-- and in CSS specify font: -->
 
 h1{
   font-family: "Eater|Indie+Flower", cursive;
@@ -69,3 +69,49 @@ border: 3px pink solid;
 
 Bootstrap Stylesheet verlinken in Head section:
  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
+
+
+Links:
+
+The target attribute can have one of the following values:
+
+    <!-- _blank - Opens the linked document in a new window or tab
+    _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+    _parent - Opens the linked document in the parent frame
+    _top - Opens the linked document in the full body of the window
+    framename - Opens the linked document in a named frame -->
+
+ <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+<!-- By default, a link will appear like this (in all browsers): An unvisited link is underlined and blue A visited link is underlined and purple An active link is underlined and red -->
+
+
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+
+
+Logo zentrieren:
+
+<img src="paris.jpg" alt="Paris" class="center"> .center { display: block; margin-left: auto; margin-right: auto; width: 50%; }

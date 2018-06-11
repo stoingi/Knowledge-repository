@@ -1,0 +1,9 @@
+Video explaining the internet
+https://www.youtube.com/watch?time_continue=9&v=21eFwbb48sE
+
+Optional Tasks
+Video: Building a website from scratch: https://vimeo.com/250902090/a47baf38e2
+Video: HTML & CSS frameworks: https://vimeo.com/251669081/9bbaba23a7
+Tutorial: HTML beginner tutorial: http://www.htmldog.com/guides/html/beginner/
+Tutorial: CSS beginner tutorial: http://www.htmldog.com/guides/css/beginner/
+Tutorial: Build another landing page: https://master21.academy/guides/html-css

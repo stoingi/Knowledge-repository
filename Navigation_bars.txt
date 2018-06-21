@@ -1,3 +1,58 @@
+ <nav> 
+<h2>Navigation</h2> 
+<ul> 
+<li><a href "#"> Link 1</a></li> 
+<li><a...> Link 2</a></li> 
+<li><a...> Link 3</a></li> 
+</ul> 
+</nav>
+
+
+
+
+Eine Navigationsleiste setzt sich zumeist aus folgenden Bestandteilen zusammen:
+
+    Seitentitel oder Logo
+    Hauptmenü
+    Suchfunktion
+    weitere Links zu Impressum etc.
+
+
+Die Klassen navbar navbar-default sind obligatorisch. Die Klasse container-fluid spannt die Navigation über die gesamte Breite des Bildschirms auf (alternativ kann container verwendet werden).
+
+Innerhalb der Bootstrap-Navigation gibt es zwei Bereiche: Seitentitel / Logo (navbar-header) und die Navigationselemente (collapse navbar-collapse).
+
+
+Seitentitel / Logo
+
+Es ist üblich in einer Webseite in der Navigation oben links den Titel der Seite bzw. ein Logo einzubinden, welches mit der Startseite verlinkt ist. Dies ist benutzerfreundlich, weil Besucher deiner Seite dieses Verhalten gewöhnt sind und auch so erwarten.
+
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+   <span class="sr-only">Navigation ein-/ausblenden</span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Seitentitel</a>
+
+
+Jede Bootstrap-Navbar hat den gleichen Grundaufbau, der nachfolgend dargestellt ist.
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      ...
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      ...
+    </div>
+
+  </div>
+</nav>
+
 
 
 

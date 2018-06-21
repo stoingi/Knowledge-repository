@@ -1,4 +1,4 @@
-links
+﻿links
 
 https://stoingi.github.io/calorie-tracker/
 https://stoingi.github.io/knowledge-repository/
@@ -46,3 +46,11 @@ https://stoingi.github.io/calorie-tracker/
 
 zurück zum master
  git checkout master
+
+
+ git rebase origin/gh-pages
+
+
+Bei Gross-/Kleinschreibung Fehler:
+git config core.ignorecase false
+

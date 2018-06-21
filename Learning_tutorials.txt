@@ -8,10 +8,14 @@ Tutorial: HTML beginner tutorial: http://www.htmldog.com/guides/html/beginner/
 Tutorial: CSS beginner tutorial: http://www.htmldog.com/guides/css/beginner/
 Tutorial: Build another landing page: https://master21.academy/guides/html-css
 
+https://www.codecademy.com/en/tracks/web.
 
+
+
+Github:
 
 https://guides.github.com/activities/hello-world/
-
+https://www.codecademy.com/learn/learn-git.
 
 
 
@@ -20,3 +24,8 @@ Bootstrap:
 https://getbootstrap.com/docs/4.1/layout/overview/
 https://getbootstrap.com/docs/4.1/components/list-group/
 https://getbootstrap.com/docs/4.1/content/tables/
+
+
+
+
+

@@ -253,3 +253,132 @@ h1{ font-family: "Eater|Indie+Flower", cursive; Dies ist eine wildcard und gilt 
         <td>Row 4, cell 3</td>
     </tr>
 </table>
+
+
+
+
+
+Buttons
+
+
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+
+
+
+.button1 {font-size: 10px;}
+
+
+.button2 {border-radius: 4px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+Use the border property to add a colored border to a button:
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+
+Use the :hover selector to change the style of a button when you move the mouse over it.
+
+Tip: Use the transition-duration property to determine the speed of the "hover" effect:
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+
+.button1 {width: 250px;}
+.button2 {width: 50%;}
+
+
+Remove margins and add float:left to each button to create a button group:
+
+.button {
+    float: left;
+}
+
+
+Use the border property to create a bordered button group:
+
+.button {
+    float: left;
+    border: 1px solid green;
+}
+
+
+Use display:block instead of float:left to group the buttons below each other, instead of side by side:
+
+.button {
+    display: block;
+}
+
+
+
+
+
+
+
+Forms are used to collect data inputted by a user. They can be used as an interface for a web application, for example, or to send data across the web.
+
+The basic tags used in the actual HTML of forms are form, input, textarea, select and option.
+form
+
+form defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.
+
+
+The method attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
+
+get is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web site’s search to appear in the web address of its search results page, for example. post is used for lengthier, more secure submissions, such as in contact forms.
+
+So a form element will look something like this:
+
+
+<form action="processingscript.php" method="post">
+
+</form>
+
+
+
+input
+
+The input tag is the daddy of the form world. It can take a multitude of guises, the most common of which are outlined below (see the input reference page for the whole crazy family):
+
+    <input type="text"> or simply <input> is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.
+    <input type="password"> is similar to the textbox, but the characters typed in by the user will be hidden.
+    <input type="checkbox"> is a checkbox, which can be toggled on and off by the user. This can also have a checked attribute (<input type="checkbox" checked> - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.
+    <input type="radio"> is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.
+    <input type="submit"> is a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example <input type="submit" value="Ooo. Look. Text on a button. Wow">.
+
+Note that, like img and br tags, the input tag, which doesn’t surround any content, doesn’t require a closing tag.
+
+
+
+

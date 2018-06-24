@@ -1,0 +1,51 @@
+
+
+#bada55
+#615C37
+#a9a379		-> olive
+
+
+https://fonts.google.com
+
+
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+font-family: 'Shadows Into Light', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded" rel="stylesheet"> 
+font-family: 'BioRhyme Expanded', serif;
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+font-family: 'Lobster Two', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Shadows+Into+Light" rel="stylesheet"> 
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet"> 
+font-family: 'Eater', cursive;
+
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+font-family: 'Indie Flower', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+font-family: 'Eater', cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Eater|Indie+Flower" rel="stylesheet">
+font-family: "Eater|Indie+Flower", cursive;
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+font-family: 'Oswald', sans-serif;

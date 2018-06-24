@@ -26,6 +26,19 @@ https://getbootstrap.com/docs/4.1/components/list-group/
 https://getbootstrap.com/docs/4.1/content/tables/
 
 
+Command line:
+
+https://www.learnenough.com/command-line-tutorial
 
 
+
+Ruby:
+
+https://vimeo.com/254710733/7f13b142a8
+https://vimeo.com/254712988/e900082cc6
+https://vimeo.com/254715365/ca8fa26e67
+https://vimeo.com/254717218/2e12a43540
+https://vimeo.com/254722233/2a3104e2ce
+https://vimeo.com/254725304/75cd0835c6
+https://vimeo.com/254727002/0a90fccb62
 

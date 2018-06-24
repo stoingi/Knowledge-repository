@@ -1,0 +1,76 @@
+- autovervollständigen
+- help
+- cache löschen ohne ctrl. d
+
+
+- dos commands mit ruby commands wie file move
+
+
+
+
+- code formatierung
+
+For Sublime Text you can do the following: In the menu item “Sublime Text” go to “Preferences” and select “Settings - User”. This opens up a configuration file that you can edit just like any other file. Make sure it looks like this:
+{
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true
+}
+Also, we recommend enabling auto-saving your files. This will automatically save your changes when you switch to another application (like your terminal), and protect you from the mistake of forgetting to save:
+{
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "save_on_focus_lost": true
+}
+
+
+# why not working?
+
+puts "Enter some text: "
+text = gets.chomp
+
+puts "Enter words to redact: "
+redact = gets.chomp
+
+words = text.split(" ")
+
+words.each do |word| 
+  if word == redact
+    print "REDACTED "
+  else
+ 		print word + " "
+  end
+end
+
+
+
+puts "Give me a word: "
+answer = gets.chomp
+if answer.include? "h"
+	 puts "includes the letter :)"
+   else 
+    puts "doesn't include the letter :("
+  end
+
+
+
+puts "Give me a word: "
+answer = gets.chomp
+if answer.include? "h"	
+   puts "includes the letter :) #{answer.capitalize}"
+ else 
+    puts "doesn't include the letter #{answer.capitalize} :("
+  end
+
+
+
+
+  lunch_order = {
+  "Ryan" => "wonton soup",
+  "Eric" => "hamburger",
+  "Jimmy" => "sandwich",
+  "Sasha" => "salad",
+  "Cole" => "taco"
+}
+
+
+lunch_order.each { | meal | }

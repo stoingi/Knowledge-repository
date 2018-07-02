@@ -17,13 +17,13 @@ while winner == false
   end
 
   numbers_guessed << guess
-  
+
   if guess > secret_number
     puts "The number is smaller than the one"
   elsif guess < secret_number
-      puts "The number is greater than the one"
+    puts "The number is greater than the one"
   else
-      puts "Congratulations, you've got it!"
-      winner = true
+    puts "Congratulations, you've got it!"
+    winner = true
   end
 end

@@ -23,6 +23,17 @@ MAC: Install SW with homebrew (brew install git)
 Ruby installieren: http://guides.railsgirls.com/install
 rbenv -> Ruby environment (set default ruby)  -->
 
+
+Lobster%7CShadows
+
+
+
+
+in ruby
+
+require "uri"
+URI.encode "foo|bar"
+
 *************************************************************************************
 
 
@@ -177,33 +188,6 @@ Links: The target attribute can have one of the following values:
 <!-- By default, a link will appear like this (in all browsers): An unvisited link is underlined and blue A visited link is underlined and purple An active link is underlined and red -->
 
 
-<style>
-  a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-</style>
-
-
 
 
 Embed Font
@@ -342,7 +326,49 @@ h1{ font-family: "Eater|Indie+Flower", cursive; Dies ist eine wildcard und gilt 
 </table>
 
 
+
+ <form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
 Buttons
+
+
+
+
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+
+
+
+
 
 
 

@@ -47,19 +47,15 @@ git remote show origin	      #
 git push -u origin master
 git branch -d gh-pages	      #Warnung wenn noch nicht komplett gemerget
 git branch -D gh-pages	      #So kann def. gelöscht werden
-<<<<<<< HEAD
 
 
-
-wenn auf einem branch gemerged werden will
-=======
 git gc			      #Garbage collect
 
 
 
 
 wenn auf einem branch gemerged werden will, vom bestehenden aus:
->>>>>>> gh-pages
+
 git merge gh-pages
 
 

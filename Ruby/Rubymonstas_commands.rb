@@ -293,3 +293,36 @@ irb(main):010:0> 109.pred.pred
 1. initialization
 2. read
 3. write
+
+
+
+
+students = ["Marion", "Ferdi", "Mario"]
+
+puts "Which student are you looking for? "
+student = gets.chomp.capitalize
+
+if students.include?(student)
+  puts "This is a student of us"
+else
+  puts "This is not a student"
+end
+
+
+
+
+
+frequencies = Hash.new(0)
+
+loop do
+	puts "Give me some text: "
+	text = gets.chomp.downcase
+	words = text.split " "
+
+	words.each do |word|
+  frequencies[word] +=1
+  end
+	break if frequencies.include?("code")
+end
+
+puts frequencies

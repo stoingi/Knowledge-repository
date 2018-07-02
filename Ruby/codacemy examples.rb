@@ -423,8 +423,8 @@ loop do
 	words = text.split " "
 
 	words.each do |word|
-  frequencies[word] +=1
-  end
+    frequencies[word] +=1
+    end
 	break if frequencies.include?("code")
 end
 

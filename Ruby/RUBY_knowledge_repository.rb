@@ -415,3 +415,32 @@ answer.chars.each do |letter|
 end
 
 puts pw
+
+
+
+
+http://www.rubyguides.com/2015/03/ruby-random/
+
+
+
+[5, 15, 30, 60].sample
+> 5
+
+
+
+('a'..'z').to_a.sample
+> b
+
+
+
+First, we prepare our charset using ranges and converting them to arrays. Then we take advantage of calling Array.new with a block, which lets us initialize an array of size n with the values produced by the block.
+
+This code will produce strings of the following form: TufwGfXZskHlPcYrLNKg.
+
+  
+def generate_code(number)
+  charset = Array('A'..'Z') + Array('a'..'z')
+  Array.new(number) { charset.sample }.join
+end
+
+puts generate_code(20)

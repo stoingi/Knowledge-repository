@@ -1,5 +1,0 @@
-def accelerate
-  puts "you have to count "
-end
-
-accelerate

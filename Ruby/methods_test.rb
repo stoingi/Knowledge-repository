@@ -1,5 +1,6 @@
-def count
-  3 + 5
+def accelerate(speed)
+  puts "speeding up, now at #{speed} km/h!"
+  puts "Vroooom!"
 end
 
-count +1
+accelerate(130)

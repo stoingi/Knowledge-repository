@@ -1,16 +1,11 @@
-secret_number = rand(1..100)
-puts secret_number
-winner = false
-puts "say number"
-
-while winner == false
-  guess = gets.chomp.to_i
-  if guess < secret_number
-    puts "It's bigger"
-  elsif guess > secret_number
-    puts "It's smaller"
-  else
-    puts "You're right"
-    winner = true
-  end
+todos = []
+puts "Hello what's your name? "
+name = gets.chomp
+puts "What you wanna do? The following commands are supported: 'add', 'done', 'list', 'quit'."
+command = gets.chomp
+if command.include?("add")
+  puts "Which item you wanna ad to the list? "
+  add_item = gets.chomp
+  todos << add_item
+  puts todos
 end

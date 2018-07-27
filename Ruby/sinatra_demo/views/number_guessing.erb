@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My first Web Application :)))</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="section">
+
+
+<!-- <p>
+<%= Time.now %>
+<%= params.inspect %>
+</p> -->
+
+
+
+<h3>This is a number guessing game</h3>
+<hr/>
+
+
+ <form action="/">
+    Hello there, what's your name? <input type="string" name="name"><br>
+    Please enter a number between 1 and 10 <input type="integer" name="name"><br>
+  <input type="submit" value="Submit"><br><br>
+</form>
+
+<%= @name
+%>
+
+
+<hr/>
+
+  <%= @guess
+  %>
+
+
+</body>
+
+
+</html>

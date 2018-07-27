@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'sinatra',
+
+gem 'rubocop', '~> 0.58.0'
+
+gem 'rom-sql', '~> 2.5'
+
+gem 'sinatra', '~> 2.0', '>= 2.0.3'
+
+bundle update

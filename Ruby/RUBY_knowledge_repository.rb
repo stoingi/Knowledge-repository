@@ -5,6 +5,17 @@
 .upcase
 .length
 .sample (zufällig)
+.shuffle
+
+
+require "active_support/all"
+
+.camelize
+.camelcase
+.underscore
+.dasherize
+
+.pluralize
 
 
 .empty?
@@ -437,10 +448,226 @@ First, we prepare our charset using ranges and converting them to arrays. Then w
 
 This code will produce strings of the following form: TufwGfXZskHlPcYrLNKg.
 
-  
+
 def generate_code(number)
   charset = Array('A'..'Z') + Array('a'..'z')
   Array.new(number) { charset.sample }.join
 end
 
 puts generate_code(20)
+
+
+def multiply(number1, number2)
+  return(number1 * number2)
+end
+
+puts multiply(3, 3)
+
+
+
+What does the following code print?
+
+def square_of_number(number)
+  return(number * number)
+end
+
+def cube_of_number(number)
+  return(number * square_of_number(number))
+end
+
+puts cube_of_number(2)
+
+
+8
+
+
+
+
+
+
+OBJECT ORIENTED PROGAMMING:
+
+
+class Cat
+  attr_accessor :name, :breed
+
+  def initialize(name, breed)
+    @name = name
+    @breed = breed
+  end
+
+  def speak
+    puts "Meow! My Name is: #{name}"
+  end
+
+  def inspect_collar
+    puts "Name: #{name}"
+    puts "Breed: #{breed}"
+  end
+  def eat(food)
+    puts "#{name} go and eat some #{food}"
+  end
+end
+
+
+
+cat_a = Cat.new("Chilly", "Fluffy old school hair")
+# cat_a.name = "Chilly"
+# cat_a.breed = "Fluffy old school hair"
+cat_b = Cat.new("Lilly", "American short hair")
+cat_c = Cat.new("Ruby", "British long hair" )
+
+cat_a.inspect_collar
+cat_b.inspect_collar
+cat_c.inspect_collar
+
+cat_a.eat("rats")
+cat_b.eat("dogs")
+
+
+
+DATE CLASS
+
+require "date"
+
+Date.today?
+
+today.monday?
+
+today.next_day.sunday?
+
+next_month = today.next_month
+
+Date.new(2018, 3, 31)
+
+
+puts today.strftime("%A, %B %-d %Y")
+
+puts today.strftime("%-d.%-m.%Y")
+
+
+
+
+
+
+MONKEY PATCHING
+
+class Array
+  def third
+    self[2]
+  end
+end
+
+
+breakfast = ["Bacon", "Cheese", "Tomato"]
+puts breakfast.third
+
+
+
+array = ["a", "b", "c", "d", "e"]
+
+class Array
+  def second
+     self[1]
+  end
+end
+
+puts array.second
+
+
+require "active_support/all"
+require "active_support/string"
+
+
+
+Das ist auch Monkey patching:
+
+irb(main):001:0> require "active_support/all"
+=> true
+irb(main):002:0> "house".pluralize
+=> "houses"
+irb(main):003:0> "dog".pluralize
+=> "dogs"
+irb(main):004:0>
+
+
+5.years.ago - 3.minutes
+34.minutes.ago
+5.years.from_now
+
+
+
+METAPROGRAMMING
+
+operator = "*"
+
+5.send(operator, 9)
+
+
+eval
+
+
+
+"foobar".send("length")
+
+
+!"foobar".include?("foo")
+
+
+
+
+require "byebug"
+
+irgendwo im code
+
+byebug
+
+
+gem list 
+
+gem install pdf-reader
+
+
+
+
+source 'https://rubygems.org'
+
+gem 'sinatra',
+
+gem 'rubocop', '~> 0.58.0'
+
+gem 'rom-sql', '~> 2.5'
+
+gem 'sinatra', '~> 2.0', '>= 2.0.3'
+
+bundle update
+
+bunde show pdf-reader 
+
+
+
+require "sinatra"
+
+get '/'
+ do
+
+a = params.['a'].to_i
+b = params.['b'].to_i
+
+"#{a} + #{b} = #{a + b}"
+
+end
+
+
+
+
+
+a = [1, 2, 3, 4, 5]
+
+a2 = a.map do |calc|
+  calc +=1
+end
+
+puts a2
+
+

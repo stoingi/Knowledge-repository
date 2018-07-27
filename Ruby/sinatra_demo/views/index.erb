@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My first Web Application :)))</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="section">
+
+
+<!-- <p>
+<%= Time.now %>
+<%= params.inspect %>
+</p> -->
+
+
+
+<h3>This program helps to convert DB Names into numeric passwords</h3>
+<hr/>
+
+
+ <form action="/">
+  What's the name of the DB?: <input type="chars" name="db_name"><br><br><br>
+  <input type="submit" value="Submit"><br><br>
+</form>
+
+<%= @result
+%>
+
+
+<hr/>
+
+
+<h3>This program helps to convert your weigth to BMI</h3>
+
+ <form action="/">
+  weight: <input type="number" step="0.01" name="weight"><br>
+  height: <input type="number" step="0.01" name="height"><br><br>
+  <input type="submit" value="Submit"><br><br>
+</form>
+
+  <%= @BMI_message
+  %>
+
+
+</body>
+
+
+</html>

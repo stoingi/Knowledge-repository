@@ -11,13 +11,13 @@ loop do
   break if command.include?("quit")
      if
         command.include?("add")
-        puts "Which item you wanna add to the list? "
+          puts "Which item you wanna add to the list? "
         add_item = gets.chomp
-        if todos.include?(add_item)
-        puts "You've already added this item #{add_item} to your list... so what you wanna do next? "
-        else
-        todos << add_item
-        end
+          if todos.include?(add_item)
+          puts "You've already added this item #{add_item} to your list... so what you wanna do next? "
+          else
+          todos << add_item
+          end
       elsif
         command.include?("list")
         puts todos

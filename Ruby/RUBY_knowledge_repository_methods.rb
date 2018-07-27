@@ -6,24 +6,24 @@
 
 #Lokale Variablen gewinnen über Methoden:
 
-def a 
+def a
   42
 end
 
-def b 
+def b
   23
 end
 
 def sum(a, b)
-  a + b 
-end 
+  a + b
+end
 
 # a = 1
 # b = 2
 
 puts sum(1, 5)
-puts a 
-puts b 
+puts a
+puts b
 
 #output:
 6
@@ -33,8 +33,8 @@ puts b
 
 
 puts sum(a, b)
-puts a 
-puts b 
+puts a
+puts b
 
 #output:
 65
@@ -43,24 +43,24 @@ puts b
 
 
 
-def a 
+def a
   42
 end
 
-def b 
+def b
   23
 end
 
 def sum(a, b)
-  a + b 
-end 
+  a + b
+end
 
 a = 1
 b = 2
 
 puts sum(a, b)
-puts a 
-puts b 
+puts a
+puts b
 
 #output:
 
@@ -87,7 +87,7 @@ puts calculate_bmi(weight, height)
 #oder
 
 def calculate_bmi(w, h)
-	(w / h) / h 
+	(w / h) / h
 end
 
 
@@ -207,10 +207,152 @@ newsletter("Viola", "Biography", "Photography")
 
 
 
-	
+
 def generate_code(number)
   charset = Array('A'..'Z') + Array('a'..'z')
   Array.new(number) { charset.sample }.join
 end
- 
+
 puts generate_code(20)
+
+
+def silly_check(number)
+  if number < 5
+    return("The number is less than 5")
+  else
+    return("The number is greater than or equal to 5")
+  end
+end
+
+def silly_check()
+  puts "Please tell me a number:"
+  number = gets.chomp.to_i
+  if number <= 5
+    puts "The number ist less than 5"
+  else
+    puts "The number is higher than 5"
+  end
+end
+
+silly_check
+
+
+my_array = ["blah monster"]
+def funify(array)
+  array << "Fun"
+end
+
+puts funify(my_array)
+
+
+
+my_array = ["blah monster"]
+def funify(array)
+  return(array.push("fun"))
+end
+
+puts funify(my_array)
+
+
+
+
+my_array = ["having", "fun"]
+
+def more_fun(my_array)
+  my_array[0] = "Fun fun"
+end
+
+puts more_fun(my_array)
+
+
+
+my_array = ["having", "fun"]
+
+def more_fun(my_array)
+  my_array[0] = "Fun fun"
+  return(my_array)
+end
+
+puts more_fun(my_array)
+
+# more_fun(my_array).each do
+#   puts my_array
+# end
+
+
+
+def increment_variable(age)
+  new_age = age +=1
+end
+
+puts increment_variable(41)
+
+
+
+
+
+class Entry
+attr_accessor :food, :calories, :category
+
+  def  initialize(food, calories, category)
+    @food = food
+    @calories = calories
+    @category = category
+  end
+
+end
+
+pizza = Entry.new("pizza", 1000, "unhealthy")
+puts pizza.food
+puts pizza.calories
+puts pizza.category
+
+
+
+Der attr_accessor macht dasselbe, 
+
+attr_accessor :food, :calories
+
+wie der Code hier:
+
+def food
+  @food
+end 
+
+def calories
+  @calories
+end
+
+def food=(food)
+  @food = food
+end 
+
+def calories=(calories)
+  @calories = calories
+end 
+
+
+Nur Lesen:
+
+attr_reader :food, :calories
+
+def food
+  @food
+end 
+
+def calories
+  @calories
+end
+
+
+Nur Schreiben:
+
+attr_writer :food, :calories
+
+def food=(food)
+  @food = food
+end 
+
+def calories=(calories)
+  @calories = calories
+end 

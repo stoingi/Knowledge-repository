@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My first Web Application :)))</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="section">
+
+
+<!-- <p>
+<%= Time.now %>
+<%= params.inspect %>
+</p> -->
+
+
+
+<h3>This program helps to convert DB Names into numeric passwords</h3>
+<hr/>
+
+
+ <form action="/">
+  What's the name of the DB?: <input type="chars" name="db_name"><br><br><br>
+  <input type="submit" value="Submit"><br><br>
+
+<%= @result
+%>
+
+
+<hr/>
+
+
+<h3>This program helps to convert your weigth to BMI</h3>
+
+ <form action="/">
+  weight: <input type="number" step="0.01" name="weight"><br>
+  height: <input type="number" step="0.01" name="height"><br><br>
+  <input type="submit" value="Submit"><br><br>
+
+<%
+  weight = params["weight"].to_i
+  height = params["height"].to_f
+  BMI = weight / (height**2)
+ %>
+
+ <b>
+   <%= BMI %>
+  </b>
+
+<%=
+  if BMI <= 15
+    "You've go very severly underweight"
+  elsif BMI >= 15 && BMI <= 16
+      "You've got severly underweight"
+  elsif BMI >= 16 && BMI <= 18.5
+    "You've got underweight"
+  elsif BMI >= 18.5 && BMI <= 25
+    "You have a healthy weight"
+  elsif BMI >= 25 && BMI <= 30
+    "You have overweight"
+  elsif BMI >= 30 && BMI <= 35
+    "You've got obese class 1"
+  elsif BMI >= 35 && BMI <= 40
+    "You've got obese class 2"
+    elsif BMI >= 40
+    "You've got obese class 3"
+  end
+
+%>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

@@ -2,8 +2,37 @@ https://stoingi.github.io/calorie-tracker/index.html
 
 
 
+Gratis Dokumentation:
+https://devdocs.io/
+
+
+http://rubykoans.com/windows
+
+https://github.com/ahmdrefat/awesome-koans/blob/master/koans-en.md
+
+
+https://www.ruby-toolbox.com/
+
+rubygems.org
+
+http://sinatrarb.com/
+
+
+
+
 
 https://www.bestcssbuttongenerator.com/
 
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+https://jekyllrb.com/
+https://www.heroku.com/
+https://de.wordpress.com
+https://de.wix.com
+
+
+
+Webserver:
+https://nginx.org/en/

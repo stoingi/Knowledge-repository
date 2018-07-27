@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My first Web Application :)))</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="section">
+
+
+<!-- <p>
+<%= Time.now %>
+<%= params.inspect %>
+</p> -->
+
+
+
+<h3>This program helps to convert DB Names into numeric passwords </h3>
+<hr/>
+
+
+ <form action="/">
+  What's the name of the DB?: <input type="chars" name="db_name"><br><br><br>
+  <input type="submit" value="Submit"><br><br>
+
+
+<%
+  db_name = params["db_name"]
+ %>
+
+ <b>
+   <% matrix = {
+  "a" => 2,
+  "b" => 2,
+  "c" => 2,
+  "d" => 3,
+  "e" => 3,
+  "f" => 3,
+  "g" => 4,
+  "h" => 4,
+  "i" => 4,
+  "j" => 5,
+  "k" => 5,
+  "l" => 5,
+  "m" => 6,
+  "o" => 6,
+  "p" => 6,
+  "q" => 7,
+  "r" => 7,
+  "s" => 7,
+  "t" => 8,
+  "u" => 8,
+  "v" => 8,
+  "w" => 9,
+  "x" => 9,
+  "y" => 9,
+  "z" => 9}
+ %>
+
+  </b>
+
+
+
+
+<%=
+# pw = ""
+# db_name.chars.each do |letter|
+#   pw << matrix[letter].to_s
+# end
+# pw
+
+db_name.chars.map do |letter|
+  digit = matrix[letter]
+  digit.to_s
+end.join
+%>
+
+
+
+<hr/>
+
+
+<h3>This program helps to convert your weigth to BMI</h3>
+<hr/>
+
+
+ <form action="/">
+  weight: <input type="number" step="0.01" name="weight"><br>
+  height: <input type="number" step="0.01" name="height"><br><br>
+  <input type="submit" value="Submit"><br><br>
+
+
+<%
+
+  weight = params["weight"].to_i
+  height = params["height"].to_f
+  BMI = weight / (height**2)
+ %>
+
+
+ <b>
+   <%= BMI %>
+  </b>
+
+<%=
+  if BMI <= 15
+    "You've go very severly underweight"
+  elsif BMI >= 15 && BMI <= 16
+      "You've got severly underweight"
+  elsif BMI >= 16 && BMI <= 18.5
+    "You've got underweight"
+  elsif BMI >= 18.5 && BMI <= 25
+    "You have a healthy weight"
+  elsif BMI >= 25 && BMI <= 30
+    "You have overweight"
+  elsif BMI >= 30 && BMI <= 35
+    "You've got obese class 1"
+  elsif BMI >= 35 && BMI <= 40
+    "You've got obese class 2"
+    elsif BMI >= 40
+    "You've got obese class 3"
+  end
+
+%>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

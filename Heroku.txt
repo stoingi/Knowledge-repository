@@ -1,0 +1,45 @@
+
+Im cmd:
+
+heroku login
+
+ins Verzeichnis wechseln, welches deployed werden soll
+
+heroku create
+
+https://nameless-basin-13695.herokuapp.com/ | https://git.heroku.com/nameless-basin-13695.git
+
+
+im GIT Bash
+
+git init
+git add .
+
+
+git remote add heroku https://git.heroku.com/nameless-basin-13695.git
+
+
+
+
+
+
+heroku addons:create heroku-postgresql
+
+
+
+git push heroku master
+
+
+
+für PROD environment die Datei gemfile anpassen, dann nochmals bundle install
+
+
+group :development, :test do
+  gem 'sqlite3'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+
+
+heroku run rails db:migrate

@@ -77,6 +77,59 @@ get '/help', to: 'help#index', as: 'help'
 <%= image_tag 'woodypizzatruck_logo.png',  class: 'center', width: '200px' %>
 
 
+
+
+<%= link_to "Home", root_path %>
+# => <a href="/">Home</a>
+
+
+Link-ing to a resource
+
+<%= link_to "Profile", user_path(@user) %>
+# => <a href="/users/1">Profile</a>
+
+
+<%= link_to "Profile", @user %>
+# => <a href="/users/1">Profile</a>
+
+
+<%= link_to "<span class='home-link'>Home</span>".html_safe, root_path %>
+# => <a href="/"><span class="home-link">Home</span></a>
+
+
+
+
+
+
+stylesheet_link_tag "style"
+# => <link href="/assets/style.css" media="screen" rel="stylesheet" />
+
+stylesheet_link_tag "style.css"
+# => <link href="/assets/style.css" media="screen" rel="stylesheet" />
+
+stylesheet_link_tag "http://www.example.com/style.css"
+# => <link href="http://www.example.com/style.css" media="screen" rel="stylesheet" />
+
+stylesheet_link_tag "style", media: "all"
+# => <link href="/assets/style.css" media="all" rel="stylesheet" />
+
+stylesheet_link_tag "style", media: "print"
+# => <link href="/assets/style.css" media="print" rel="stylesheet" />
+
+stylesheet_link_tag "random.styles", "/css/stylish"
+# => <link href="/assets/random.styles" media="screen" rel="stylesheet" />
+#    <link href="/css/stylish.css" media="screen" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
 \customer_database\app\assets\stylesheets\scaffolds.scss
 
 
@@ -204,6 +257,22 @@ http://localhost:3000/customers.json
 
 
 
+rails new -d postgresql
+
+
+Von sqlite3 auf PG ändern im gemfile:
+# Use sqlite3 as the database for Active Record
+
+gem 'pg'
+
+danach im git bash:
+bundle install
+
+
+
+
+
+
 DB Schema
 
 \customer_database\config\schema.rb
@@ -250,3 +319,50 @@ class Customer < ApplicationRecord
 end
 
 Customer.valid?
+
+
+
+<p>Random number:</p><%= 2 + rand(30) %>
+
+
+
+
+
+
+
+ANSTATT:
+
+<p>
+  <b>Total: </b>
+
+  <%= @entries.sum  do |entry|
+    entry.calories
+  end %>
+
+  calories.
+</p>
+
+<p>
+  You can still consume
+  <%= 2200 - @entries.sum do |entry|
+    entry.calories
+  end %>
+  calories today.
+</p>
+
+
+
+SO: 
+
+<% total_calories = @entries.sum do |entry|
+  entry.calories
+end %>
+
+
+<p>
+  <b>Total: </b>
+  <%= total_calories %>
+  calories.
+</p>
+
+

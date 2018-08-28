@@ -1,14 +1,8 @@
-puts "Say something: "
-text = gets.chomp
-puts "word to redact: "
-redact = gets.chomp
-
-words = text.split(" ")
-
-words.each do |word|
-  if word == redact
-  	print "REDACTED "
-  else
-    print word + " "
-	end
+def calc_baufort(beaufort)
+  # puts "How many beaufort?"
+  # beaufort = gets.chomp
+  beaufort * 3
 end
+
+
+puts calc_baufort(4)

@@ -1,0 +1,20 @@
+crawling: aus Sourcecode Informationen auslesen
+
+
+Mit "curl" kann man auf API's zugreifen:
+
+curl https://api.github.com/users/therod
+
+
+json JavaScript Object Notation
+
+
+require 'net/http'
+
+
+require 'json'
+
+
+
+JSON.parse(organisations)
+organisations_array.first['login']

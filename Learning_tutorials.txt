@@ -76,3 +76,15 @@ https://vimeo.com/259663858/3a5927095a
 https://vimeo.com/259667371/593f697d59
 https://vimeo.com/259669041/81bfb46d5a
 https://vimeo.com/259677569/85e87012fc
+
+
+
+customer project
+
+Video 1: How to copy the project to your computer & explanation of project: https://vimeo.com/281596639/271043f50e
+
+Video 2: Explanation of the code: https://vimeo.com/281598379/00da1bc045
+
+You find the sample solution as a branch of the project here: https://github.com/nerdinand/customer-database/tree/email
+
+You find one option of CSS styling as a branch of the project here: https://github.com/nerdinand/customer-database/tree/css

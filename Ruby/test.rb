@@ -13,8 +13,7 @@ picasso = {"name" => "Picasso", "year_born" => 1899, "year_died" => 1950}
 # end
 
 #compare_age
-
-
+
 
 def compare_age(person1, person2)
   age_person1 = person1["year_died"] - person1["year_born"]
@@ -32,5 +31,3 @@ compare_age(picasso, kant)
 compare_age(kant, beethoven)
 
 
-examples:
-Total amount with VAT

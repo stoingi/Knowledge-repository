@@ -121,16 +121,12 @@ whazz_up("Whazz up", "Viola", "Elena", "Damian")
 
 
 def calc(beaufort)
-  puts ("How many beaufort?)
-  beaufort = gets.chomp
   beaufort * 3
 end
 
 calc(5)
 
 
-
-def
 
 
 
@@ -146,6 +142,10 @@ age = ask("What's your age?")
 
 puts "Hello #{name}"
 puts "Your age is #{age}"
+
+
+
+
 
 
 
@@ -177,6 +177,35 @@ def compare_age(person1, person2)
 end
 
 compare_age(beethoven, kant)
+
+
+
+
+
+def compare_age(person1, person2)
+
+  age_person1 = person1["year_died"] - person1["year_born"]
+
+  age_person2 = person2["year_died"] - person2["year_born"]
+
+
+
+  if age_person1 < age_person2
+
+    puts "#{person2["name"]} (#{age_person2}) grew older than #{person1["name"]} (#{age_person1})"
+
+  else
+
+    puts "#{person2["name"]} (#{age_person2}) is younger than #{person1["name"]} (#{age_person1})"
+
+  end
+
+end
+
+
+compare_age(picasso, kant)
+compare_age(kant, beethoven)
+
 
 
 
@@ -234,7 +263,7 @@ def silly_check()
   end
 end
 
-silly_check
+
 
 
 my_array = ["blah monster"]

@@ -326,3 +326,28 @@ loop do
 end
 
 puts frequencies
+
+
+
+
+places = ["Paris", "Nairobi", "Tokyo", "Portland", "Steffisburg"]
+
+
+ places.each do |place|
+   puts place
+ end
+
+
+Find a way to achieve the same output without using each.  Try using a loop. Should work with any number of elements in the array.
+​
+
+loop do
+  place_count = places.length
+  puts places
+  break if places.length == place_count
+end
+
+
+
+
+
